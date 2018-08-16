@@ -1,0 +1,205 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* change background of navbar */
+#nav-bar
+{
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+
+/* remove nav bar top border */
+#navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar)
+{
+  border-top-style: none !important;
+}
+
+/* style navbar buttons */
+#nav-bar .toolbarbutton-1:not(:-moz-lwtheme)
+{
+  -moz-appearance: toolbarbutton !important;
+  margin: 0px !important;
+}
+
+#nav-bar .toolbarbutton-1:-moz-lwtheme:hover
+{
+  background: hsla(0,0%,100%,0.30);
+}
+
+#nav-bar
+{
+  padding: 0 !important;
+  margin-top: 0px !important;
+}
+
+#nav-bar .toolbarbutton-icon:hover,
+#nav-bar .toolbarbutton-icon
+{
+  background: none !important;
+}
+
+#nav-bar .toolbarbutton-icon:not(:-moz-lwtheme),
+#nav-bar .toolbarbutton-icon:not(:-moz-lwtheme):hover
+{
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* change text boxes to native style*/
+#urlbar, .searchbar-textbox
+{
+  color: -moz-fieldtext !important;
+  -moz-appearance: textfield !important;
+}
+
+:root {
+  --toolbarbutton-inner-padding: 0 !important;
+  --arrowpanel-dimmed: Highlight !important;
+  --arrowpanel-dimmed-further: Highlight !important;
+  --arrowpanel-dimmed-even-further: Highlight !important;
+}
+
+
+/* change background of bookmarks bar */
+#PersonalToolbar
+{
+  background: none !important;
+  padding: 0 !important;
+}
+
+#PersonalToolbar .bookmark-item
+{
+  -moz-appearance: toolbarbutton !important;
+}
+
+#PersonalToolbar .menuitem-iconic
+{
+  -moz-appearance: menuitem !important;
+}
+
+#PersonalToolbar .menu-iconic
+{
+  -moz-appearance: menuitem !important;
+}
+
+#PersonalToolbar .bookmark-item:-moz-lwtheme
+{
+  -moz-appearance: none !important;
+}
+
+#PersonalToolbar .bookmark-item:-moz-lwtheme:hover
+{
+  background: hsla(0,0%,100%,0.30) !important;
+}
+.urlbar-icon:hover, .urlbar-icon-wrapper:hover {
+  background-color: Highlight !important;
+}
+.urlbar-icon[open],
+.urlbar-icon-wrapper[open],
+.urlbar-icon:hover:active,
+.urlbar-icon-wrapper:hover:active {
+  background-color: Highlight !important;
+}
+#identity-box:hover,
+#identity-box[open] {
+  background-color: Highlight !important;
+}
+
+
+
+/* change colors of PanelUI menu */
+:root {
+  --arrowpanel-background: -moz-dialog !important;
+  --arrowpanel-color: -moz-dialogText !important;
+}
+panelview .toolbarbutton-1:-moz-any(:hover, :focus):not(:-moz-any([disabled])),
+toolbarbutton.subviewbutton:-moz-any(:hover, :focus):not(:-moz-any([disabled] )),
+menu.subviewbutton[_moz-menuactive]:not(:-moz-any([disabled])),
+menuitem.subviewbutton[_moz-menuactive]:not(:-moz-any([disabled])),
+.widget-overflow-list .toolbarbutton-1:-moz-any(:hover, :focus):not(:-moz-any([disabled])),
+.toolbaritem-combined-buttons:-moz-any(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton:-moz-any(:hover, :focus):not(:-moz-any([disabled])) {
+  color: HighlightText !important;
+  background-color: Highlight !important;
+}
+photonpanelmultiview .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
+  background-color:  -moz-dialog !important;
+  border: 1px solid ThreeDShadow !important;
+}
+photonpanelmultiview .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic):hover {
+  background-color: Highlight !important;
+  border: 1px solid HighlightText !important;
+}
+.subviewbutton:hover::after {
+  background-color: Highlight !important;
+  color: HighlightText !important;
+}
+
+
+/* change colors of empty page (e.g. while loading) */
+.tabbrowser-tabbox {
+  background: -moz-Field !important;
+  color: -moz-FieldText !important;
+}
+
+
+/* change style of sidebar header */
+#sidebar-header {
+  background-color: -moz-dialog !important;
+  padding: 0px !important;
+}
+#sidebar-switcher-target {
+  -moz-appearance: button !important;
+}
+.sidebar-header, #sidebar-header {
+  font-size: 1em !important;
+}
+
+
+/* change style of autocomplete popup */
+.search-panel-current-engine {
+  color: ButtonText !important;
+  -moz-appearance: button !important;
+}
+.search-panel-header {
+  background-color: -moz-Dialog !important;
+}
+.search-panel-one-offs {
+  background-color: -moz-Dialog !important;
+}
+.searchbar-engine-one-off-item:not(.dummy)  {
+  -moz-appearance: dualbutton !important;
+}
+.addengine-item {
+  color: ButtonText !important;
+  -moz-appearance: button !important;
+}
+.search-setting-button {
+  color: ButtonText !important;
+  -moz-appearance: button !important;
+}
+.autocomplete-richlistitem:hover,
+treechildren.searchbar-treebody::-moz-tree-row(hover) {
+  background-color: Highlight !important;
+}
+
+
+
+
+/* change style of download popup menu */
+.downloadsPanelFooter {
+  background-color: var(--arrowpanel) !important;
+}
+
+.downloadIconShow > .button-box > .button-icon {
+    list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar") !important;
+}
+
+
+.popup-notification-button, .panel-subview-footer, .downloadsPanelFooterButton{
+  -moz-appearance: button !important;
+
+}
+
