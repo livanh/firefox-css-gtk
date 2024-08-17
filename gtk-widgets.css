@@ -16,10 +16,13 @@
 }
 
 /* style navbar buttons */
-#nav-bar .toolbarbutton-1:not(:-moz-lwtheme)
+
+#nav-bar .toolbarbutton-1:not([lwtheme])
 {
   -moz-appearance: toolbarbutton !important;
-  margin: 0px !important;
+}
+:root {
+  --arrowpanel-header-info-icon-padding: 0px;
 }
 
 #nav-bar .toolbarbutton-1:-moz-lwtheme:hover
@@ -39,12 +42,24 @@
   background: none !important;
 }
 
-#nav-bar .toolbarbutton-icon:not(:-moz-lwtheme),
-#nav-bar .toolbarbutton-icon:not(:-moz-lwtheme):hover
+#nav-bar .toolbarbutton-icon:not([lwtheme]),
+#nav-bar .toolbarbutton-icon:not([lwtheme]):hover
 {
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  padding: 3px !important;
+}
+#PanelUI-menu-button > .toolbarbutton-badge-stack
+{
+  padding: 4px !important;
+}
+#PanelUI-menu-button > .toolbarbutton-badge-stack > .toolbarbutton-icon
+{
+  padding: 0px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+*|*:root {
+  --button-hover-bgcolor: none !important;
+  --button-active-bgcolor: none !important;
 }
 
 
@@ -202,4 +217,3 @@ treechildren.searchbar-treebody::-moz-tree-row(hover) {
   -moz-appearance: button !important;
 
 }
-

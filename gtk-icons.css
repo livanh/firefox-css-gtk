@@ -1,434 +1,68 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
+/* toolbar buttons icons */
 
-/* change buttons icons */
-
-#back-button 
-{
-  list-style-image: url("moz-icon://stock/previous?size=menu") !important;
-}
-:root:not([uidensity=compact]) #back-button
-{
-  list-style-image: url("moz-icon://stock/previous?size=toolbar") !important;
-}
-:root[uidensity=touch] #back-button
-{
-  list-style-image: url("moz-icon://stock/previous?size=dialog") !important;
-}
-
-#forward-button
-{
-  list-style-image: url("moz-icon://stock/next?size=menu") !important;
-}
-:root:not([uidensity=compact]) #forward-button
-{
-  list-style-image: url("moz-icon://stock/next?size=toolbar") !important;
-}
-:root[uidensity=touch] #forward-button
-{
-  list-style-image: url("moz-icon://stock/next?size=dialog") !important;
-}
-
-#home-button
-{
-  list-style-image: url("moz-icon://stock/go-home?size=menu") !important;
-}
-:root:not([uidensity=compact]) #home-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/go-home?size=toolbar") !important;
-}
-:root[uidensity=touch] #home-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/go-home?size=dialog") !important;
-}
-
-#reload-button
-{
-  list-style-image: url("moz-icon://stock/gtk-refresh?size=menu") !important;
-}
-:root:not([uidensity=compact]) #reload-button
-{
-  list-style-image: url("moz-icon://stock/gtk-refresh?size=toolbar") !important;
-}
-:root[uidensity=touch] #reload-button
-{
-  list-style-image: url("moz-icon://stock/gtk-refresh?size=dialog") !important;
-}
-
-#stop-button
-{
-  list-style-image: url("moz-icon://stock/gtk-stop?size=menu") !important;
-}
-:root:not([uidensity=compact]) #stop-button
-{
-  list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar") !important;
-}
-:root[uidensity=touch] #stop-button
-{
-  list-style-image: url("moz-icon://stock/gtk-stop?size=dialog") !important;
-}
-
-#edit-controls > #cut-button
-{
-  list-style-image: url("moz-icon://stock/edit-cut?size=menu") !important;
-}
-:root:not([uidensity=compact]) #edit-controls[cui-areatype="toolbar"] > #cut-button
-{
-  list-style-image: url("moz-icon://stock/edit-cut?size=toolbar") !important;
-}
-:root[uidensity=touch] #edit-controls[cui-areatype="toolbar"] > #cut-button
-{
-  list-style-image: url("moz-icon://stock/edit-cut?size=dialog") !important;
-}
-
-#edit-controls > #copy-button
-{
-  list-style-image: url("moz-icon://stock/edit-copy?size=menu") !important;
-}
-:root:not([uidensity=compact]) #edit-controls[cui-areatype="toolbar"] > #copy-button
-{
-  list-style-image: url("moz-icon://stock/edit-copy?size=toolbar") !important;
-}
-:root[uidensity=touch] #edit-controls[cui-areatype="toolbar"] > #copy-button
-{
-  list-style-image: url("moz-icon://stock/edit-copy?size=dialog") !important;
-}
-
-#edit-controls > #paste-button
-{
-  list-style-image: url("moz-icon://stock/edit-paste?size=menu") !important;
-}
-:root:not([uidensity=compact]) #edit-controls[cui-areatype="toolbar"] > #paste-button
-{
-  list-style-image: url("moz-icon://stock/edit-paste?size=toolbar") !important;
-}
-:root[uidensity=touch] #edit-controls[cui-areatype="toolbar"] > #paste-button
-{
-  list-style-image: url("moz-icon://stock/edit-paste?size=dialog") !important;
-}
-
-#zoom-controls > #zoom-out-button
-{
-  list-style-image: url("moz-icon://stock/remove?size=menu") !important;
-}
-:root:not([uidensity=compact]) #zoom-controls[cui-areatype="toolbar"] > #zoom-out-button
-{
-  list-style-image: url("moz-icon://stock/remove?size=toolbar") !important;
-}
-:root[uidensity=touch] #zoom-controls[cui-areatype="toolbar"] > #zoom-out-button
-{
-  list-style-image: url("moz-icon://stock/remove?size=dialog") !important;
-}
-
-#zoom-controls > #zoom-in-button
-{
-  list-style-image: url("moz-icon://stock/add?size=menu") !important;
-}
-:root:not([uidensity=compact]) #zoom-controls[cui-areatype="toolbar"] > #zoom-in-button
-{
-  list-style-image: url("moz-icon://stock/add?size=toolbar") !important;
-}
-:root[uidensity=touch] #zoom-controls[cui-areatype="toolbar"] > #zoom-in-button
-{
-  list-style-image: url("moz-icon://stock/add?size=dialog") !important;
-}
-
-#feed-button
-{
-  list-style-image: url("moz-icon://stock/news-feed?size=menu") !important;
-}
-:root:not([uidensity=compact]) #feed-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/news-feed?size=toolbar") !important;
-}
-:root[uidensity=touch] #feed-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/news-feed?size=dialog") !important;
-}
-
-#library-button
-{
-  list-style-image: url("moz-icon://stock/applications-libraries?size=menu") !important;
-}
-:root:not([uidensity=compact]) #library-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/applications-libraries?size=toolbar") !important;
-}
-:root[uidensity=touch] #library-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/applications-libraries?size=dialog") !important;
-}
-
-#webide-button
-{
-  list-style-image: url("moz-icon://stock/applications-internet?size=menu") !important;
-}
-:root:not([uidensity=compact]) #webide-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/applications-internet?size=toolbar") !important;
-}
-:root[uidensity=touch] #webide-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/applications-internet?size=dialog") !important;
-}
-
-#developer-button
-{
-  list-style-image: url("moz-icon://stock/applications-development?size=menu") !important;
-}
-:root:not([uidensity=compact]) #developer-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/applications-development?size=toolbar") !important;
-}
-:root[uidensity=touch] #developer-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/applications-development?size=dialog") !important;
-}
-
-#print-button
-{
-  list-style-image: url("moz-icon://stock/document-print?size=menu") !important;
-}
-:root:not([uidensity=compact]) #print-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/document-print?size=toolbar") !important;
-}
-:root[uidensity=touch] #print-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/document-print?size=dialog") !important;
-}
-
-#bookmarks-menu-button
-{
-  list-style-image: url("moz-icon://stock/user-bookmarks?size=menu") !important;
-}
-:root:not([uidensity=compact]) #bookmarks-menu-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/user-bookmarks?size=toolbar") !important;
-}
-:root[uidensity=touch] #bookmarks-menu-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/user-bookmarks?size=dialog") !important;
-}
-
-#fullscreen-button
-{
-  list-style-image: url("moz-icon://stock/window_fullscreen?size=menu") !important;
-}
-:root:not([uidensity=compact]) #fullscreen-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/window_fullscreen?size=toolbar") !important;
-}
-:root[uidensity=touch] #fullscreen-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/window_fullscreen?size=dialog") !important;
-}
-
-#new-window-button
-{
-  list-style-image: url("moz-icon://stock/stock_new-window?size=menu") !important;
-}
-:root:not([uidensity=compact]) #new-window-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/stock_new-window?size=toolbar") !important;
-}
-:root[uidensity=touch] #new-window-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/stock_new-window?size=dialog") !important;
-}
-
-#panic-button
-{
-  list-style-image: url("moz-icon://stock/gtk-delete?size=menu") !important;
-}
-:root:not([uidensity=compact]) #panic-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/gtk-delete?size=toolbar") !important;
-}
-:root[uidensity=touch] #panic-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/gtk-delete?size=dialog") !important;
-}
-
-#email-link-button
-{
-  list-style-image: url("moz-icon://stock/mail-send?size=menu") !important;
-}
-:root:not([uidensity=compact]) #email-link-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/mail-send?size=toolbar") !important;
-}
-:root[uidensity=touch] #email-link-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/mail-send?size=dialog") !important;
-}
-
-#preferences-button
-{
-  list-style-image: url("moz-icon://stock/gtk-preferences?size=menu") !important;
-}
-:root:not([uidensity=compact]) #preferences-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/gtk-preferences?size=toolbar") !important;
-}
-:root[uidensity=touch] #preferences-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/gtk-preferences?size=dialog") !important;
-}
-
-#characterencoding-button
-{
-  list-style-image: url("moz-icon://stock/font?size=menu") !important;
-}
-:root:not([uidensity=compact]) #characterencoding-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/font?size=toolbar") !important;
-}
-:root[uidensity=touch] #characterencoding-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/font?size=dialog") !important;
-}
-
-/* #sidebar-button */
-
-#find-button
-{
-  list-style-image: url("moz-icon://stock/find?size=menu") !important;
-}
-:root:not([uidensity=compact]) #find-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/find?size=toolbar") !important;
-}
-:root[uidensity=touch] #find-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/find?size=dialog") !important;
-}
-
-#open-file-button
-{
-  list-style-image: url("moz-icon://stock/gtk-open?size=menu") !important;
-}
-:root:not([uidensity=compact]) #open-file-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/gtk-open?size=toolbar") !important;
-}
-:root[uidensity=touch] #open-file-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/gtk-open?size=dialog") !important;
-}
-
-#save-page-button
-{
-  list-style-image: url("moz-icon://stock/gtk-save?size=menu") !important;
-}
-:root:not([uidensity=compact]) #save-page-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/gtk-save?size=toolbar") !important;
-}
-:root[uidensity=touch] #save-page-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/gtk-save?size=dialog") !important;
-}
-
-#privatebrowsing-button
-{
-  list-style-image: url("moz-icon://stock/avatar-default?size=menu") !important;
-}
-:root:not([uidensity=compact]) #privatebrowsing-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/avatar-default?size=toolbar") !important;
-}
-:root[uidensity=touch] #privatebrowsing-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/avatar-default?size=dialog") !important;
-}
-
-#sync-button
-{
-  list-style-image: url("moz-icon://stock/emblem-shared?size=menu") !important;
-}
-:root:not([uidensity=compact]) #sync-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/emblem-shared?size=toolbar") !important;
-}
-:root[uidensity=touch] #sync-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/emblem-shared?size=dialog") !important;
-}
-
-#history-panelmenu
-{
-  list-style-image: url("moz-icon://stock/document-open-recent?size=menu") !important;
-}
-:root:not([uidensity=compact]) #history-panelmenu[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/document-open-recent?size=toolbar") !important;
-}
-:root[uidensity=touch] #history-panelmenu[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/document-open-recent?size=dialog") !important;
-}
-
-#add-ons-button
-{
-  list-style-image: url("moz-icon://stock/extension?size=menu") !important;
-}
-:root:not([uidensity=compact]) #add-ons-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/extension?size=toolbar") !important;
-}
-:root[uidensity=touch] #add-ons-button[cui-areatype="toolbar"]
-{
-  list-style-image: url("moz-icon://stock/extension?size=dialog") !important;
-}
-
-#nav-bar-overflow-button
-{
-  list-style-image: url("moz-icon://stock/go-jump?size=menu") !important;
-}
-:root:not([uidensity=compact]) #nav-bar-overflow-button
-{
-  list-style-image: url("moz-icon://stock/go-jump?size=toolbar") !important;
-}
-:root[uidensity=touch] #nav-bar-overflow-button
-{
-  list-style-image: url("moz-icon://stock/go-jump?size=dialog") !important;
-}
-
-#PanelUI-button .toolbarbutton-1 > .toolbarbutton-badge-stack > .toolbarbutton-icon
-{
-  -moz-appearance: none !important;
-}
+#back-button               { list-style-image: url("moz-icon://stock/previous?size=dialog") !important }
+#forward-button            { list-style-image: url("moz-icon://stock/next?size=dialog") !important }
+#home-button               { list-style-image: url("moz-icon://stock/go-home?size=dialog") !important }
+#reload-button             { list-style-image: url("moz-icon://stock/gtk-refresh?size=dialog") !important }
+#stop-button               { list-style-image: url("moz-icon://stock/gtk-stop?size=dialog") !important }
+#cut-button                { list-style-image: url("moz-icon://stock/edit-cut?size=dialog") !important }
+#copy-button               { list-style-image: url("moz-icon://stock/edit-copy?size=dialog") !important }
+#paste-button              { list-style-image: url("moz-icon://stock/edit-paste?size=dialog") !important }
+#zoom-out-button           { list-style-image: url("moz-icon://stock/remove?size=dialog") !important }
+#zoom-in-button            { list-style-image: url("moz-icon://stock/add?size=dialog") !important }
+#library-button            { list-style-image: url("moz-icon://stock/applications-libraries?size=dialog") !important }
+#developer-button          { list-style-image: url("moz-icon://stock/applications-development?size=dialog") !important }
+#print-button              { list-style-image: url("moz-icon://stock/document-print?size=dialog") !important }
+#bookmarks-menu-button     { list-style-image: url("moz-icon://stock/user-bookmarks?size=dialog") !important }
+#fullscreen-button         { list-style-image: url("moz-icon://stock/window_fullscreen?size=dialog") !important }
+#new-window-button         { list-style-image: url("moz-icon://stock/stock_new-window?size=dialog") !important }
+#panic-button              { list-style-image: url("moz-icon://stock/gtk-delete?size=dialog") !important }
+#email-link-button         { list-style-image: url("moz-icon://stock/mail-send?size=dialog") !important }
+#preferences-button        { list-style-image: url("moz-icon://stock/gtk-preferences?size=dialog") !important }
+#characterencoding-button  { list-style-image: url("moz-icon://stock/font?size=dialog") !important }
+#sidebar-button            { list-style-image: url("moz-icon://stock/go-last?size=dialog") !important }
+#find-button               { list-style-image: url("moz-icon://stock/find?size=dialog") !important }
+#open-file-button          { list-style-image: url("moz-icon://stock/gtk-open?size=dialog") !important }
+#save-page-button          { list-style-image: url("moz-icon://stock/gtk-save?size=dialog") !important }
+#privatebrowsing-button    { list-style-image: url("moz-icon://stock/avatar-default?size=dialog") !important }
+#sync-button               { list-style-image: url("moz-icon://stock/emblem-shared?size=dialog") !important }
+#logins-button             { list-style-image: url("moz-icon://stock/dialog-password?size=dialog") !important }
+#screenshot-button         { list-style-image: url("moz-icon://stock/camera?size=dialog") !important }
+#save-to-pocket-button     { list-style-image: url("moz-icon://stock/stock_todo?size=dialog") !important }
+#import-button             { list-style-image: url("moz-icon://stock/bookmarks_list_add?size=dialog") !important }
+#history-panelmenu         { list-style-image: url("moz-icon://stock/document-open-recent?size=dialog") !important }
+#unified-extensions-button { list-style-image: url("moz-icon://stock/extension?size=dialog") !important }
+#nav-bar-overflow-button   { list-style-image: url("moz-icon://stock/go-jump?size=dialog") !important }
 #PanelUI-menu-button .toolbarbutton-icon
-{
-  list-style-image: url("moz-icon://stock/stock_properties?size=menu") !important;
-}
-:root:not([uidensity=compact]) #PanelUI-menu-button .toolbarbutton-icon
-{
-  list-style-image: url("moz-icon://stock/stock_properties?size=toolbar") !important;
-}
-:root[uidensity=touch] #PanelUI-menu-button .toolbarbutton-icon
-{
-  list-style-image: url("moz-icon://stock/stock_properties?size=dialog") !important;
-}
+                           { list-style-image: url("moz-icon://stock/open-menu?size=menu") !important;}
 
+
+/* bookmarks bar */
+
+/* not working? */
+/*
 .bookmark-item {
-  list-style-image: url("moz-icon://stock/applications-internet?size=toolbar") !important;
+  list-style-image: url("moz-icon://stock/applications-internet?size=menubar") !important;
 }
+*/
+
 .bookmark-item[container], treechildren::-moz-tree-image(title, container) {
   list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar") !important;
 }
 
 #PlacesChevron
 {
-  list-style-image: url("moz-icon://stock/go-jump?size=toolbar") !important;
-  -moz-appearance: toolbarbutton !important;
+  list-style-image: url("moz-icon://stock/go-jump?size=dialog") !important;
+  /* -moz-appearance: toolbarbutton !important; */
+}
+/*
+#nav-bar .toolbarbutton-icon {
+  width: 26px !important;
+  height: 26px !important;
 }
 
-#nav-bar .toolbarbutton-icon {
-  width: 16px !important;
-  height: 16px !important;
-}
 :root:not([uidensity=compact]) #nav-bar .toolbarbutton-icon {
   width: 24px !important;
   height: 24px !important;
@@ -437,8 +71,9 @@
   width: 32px !important;
   height: 32px !important;
 }
-
+*/
 /* remove additional border on hover/click on some buttons (e.g. PanelUI) */
+/*
 :root:-moz-lwtheme-brighttext, toolbar[brighttext]
 {
   --toolbarbutton-hover-background: none !important;
@@ -449,8 +84,15 @@
   border: none !important;
   margin-left: 0px !important;
 }
-
+*/
 /* downloads button */
+/*
+
+#downloads-indicator-icon
+{
+  list-style-image: url("moz-icon://stock/gtk-save?size=menu") !important;
+}
+
 #downloads-indicator-anchor {
   min-width: 16px !important;
   min-height: 16px !important;
@@ -582,52 +224,51 @@
   fill: Highlight;
   }
 }
-
+*/
 
 
 /* change icons of PanelUI */
+/*
+#appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
+#appMenu-mainView > .panel-subview-body > toolbarbutton > image{
+  fill: currentColor;
+  -moz-context-properties: fill;
+  margin-inline: 0 8px !important;
+}*/
+#appMenu-new-tab-button2            { list-style-image: url("moz-icon://stock/stock_new-tab?size=dialog") }
+#appMenu-new-window-button2         { list-style-image: url("moz-icon://stock/window_new?size=dialog") }
+#appMenu-new-private-window-button2 { list-style-image: url("moz-icon://stock/avatar-default?size=dialog") }
+#appMenu-bookmarks-button           { list-style-image: url("moz-icon://stock/user-bookmarks?size=dialog") }
+#appMenu-history-button             { list-style-image: url("moz-icon://stock/document-open-recent?size=dialog") }
+#appMenu-downloads-button           { list-style-image: url("moz-icon://stock/browser-download?size=dialog") }
+#appMenu-passwords-button           { list-style-image: url("moz-icon://stock/dialog-password?size=dialog") }
+#appMenu-extensions-themes-button   { list-style-image: url("moz-icon://stock/extension?size=dialog") }
+#appMenu-print-button2              { list-style-image: url("moz-icon://stock/document-print?size=dialog") }
+#appMenu-save-file-button2          { list-style-image: url("moz-icon://stock/gtk-save?size=dialog") }
+#appMenu-find-button2               { list-style-image: url("moz-icon://stock/search?size=dialog") }
+#appMenu-settings-button            { list-style-image: url("moz-icon://stock/gtk-preferences?size=dialog") }
+#appMenu-more-button2               { list-style-image: url("moz-icon://stock/preferences-other?size=dialog") }
+#appMenu-help-button2               { list-style-image: url("moz-icon://stock/help?size=dialog") }
+#appMenu-quit-button2               { list-style-image: url("moz-icon://stock/gtk-quit?size=dialog") }
 
+#appMenu-zoomReduce-button2 > .toolbarbutton-icon  { list-style-image: url("moz-icon://stock/remove?size=dialog") }
+#appMenu-zoomEnlarge-button2 > .toolbarbutton-icon { list-style-image: url("moz-icon://stock/add?size=dialog") }
+#appMenu-fullscreen-button2 > .toolbarbutton-icon  { list-style-image: url("moz-icon://stock/window_fullscreen?size=dialog") }
+
+.panel-subview-body > toolbarbutton > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+.panel-subview-body > toolbarbutton > .toolbarbutton-text {
+  margin-left: 8px !important;
+}
+/*
 #appMenu-fxa-label, #appMenu-fxa-icon {
   list-style-image:  url("moz-icon://stock/emblem-shared?size=menu") !important;
-}
-#appMenu-new-window-button {
-  list-style-image:  url("moz-icon://stock/window_new?size=menu") !important;
-}
-#appMenu-private-window-button {
-  list-style-image:  url("moz-icon://stock/avatar-default?size=menu") !important;
+}t-style-image:  url("moz-icon://stock/avatar-default?size=menu") !important;
 }
 #appMenuRestoreLastSession {
   list-style-image:  url("moz-icon://stock/undo?size=menu") !important;
-}
-#appMenu-zoomReduce-button {
-  list-style-image:  url("moz-icon://stock/remove?size=menu") !important;
-}
-#appMenu-zoomEnlarge-button {
-  list-style-image:  url("moz-icon://stock/add?size=menu") !important;
-}
-#appMenu-fullscreen-button {
-  list-style-image:  url("moz-icon://stock/window_fullscreen?size=menu") !important;
-}
-#appMenu-cut-button {
-  list-style-image:  url("moz-icon://stock/edit-cut?size=menu") !important;
-}
-#appMenu-copy-button {
-  list-style-image:  url("moz-icon://stock/edit-copy?size=menu") !important;
-}
-#appMenu-paste-button {
-  list-style-image:  url("moz-icon://stock/edit-paste?size=menu") !important;
-}
-#appMenu-library-button {
-  list-style-image:  url("moz-icon://stock/user-bookmarks?size=menu") !important;
-}
-#appMenu-addons-button {
-  list-style-image:  url("moz-icon://stock/extension?size=menu") !important;
-}
-#appMenu-preferences-button {
-  list-style-image:  url("moz-icon://stock/gtk-preferences?size=menu") !important;
-}
-#appMenu-customize-button {
-  list-style-image:  url("moz-icon://stock/preferences-theme?size=menu") !important;
 }
 #appMenu-open-file-button {
   list-style-image:  url("moz-icon://stock/gtk-open?size=menu") !important;
@@ -639,30 +280,7 @@
 #appMenu-open-file-button > .toolbarbutton-text {
   padding-left: 8px !important;
 }
-#appMenu-save-file-button {
-  list-style-image:  url("moz-icon://stock/gtk-save?size=menu") !important;
-}
-#appMenu-save-file-button > .toolbarbutton-icon {
-  width: 16px !important;
-  height: 16px !important;
-}
 #appMenu-save-file-button > .toolbarbutton-text {
-  padding-left: 8px !important;
-}
-#appMenu-print-button {
-  list-style-image:  url("moz-icon://stock/gtk-print?size=menu") !important;
-}
-#appMenu-find-button, #panelMenu_searchBookmarks {
-  list-style-image:  url("moz-icon://stock/gtk-find?size=menu") !important;
-}
-#appMenu-more-button {
-  list-style-image:  url("moz-icon://stock/preferences-other?size=menu") !important;
-}
-#appMenu-more-button > .toolbarbutton-icon{
-  width: 16px !important;
-  height: 16px !important;
-}
-#appMenu-more-button > .toolbarbutton-text {
   padding-left: 8px !important;
 }
 #appMenu-developer-button {
@@ -675,12 +293,6 @@
 #appMenu-developer-button > .toolbarbutton-text {
   padding-left: 8px !important;
 }
-#appMenu-help-button {
-  list-style-image:  url("moz-icon://stock/help?size=menu") !important;
-}
-#appMenu-quit-button {
-  list-style-image:  url("moz-icon://stock/gtk-quit?size=menu") !important;
-}
 #panelMenu_bookmarkingTools {
   list-style-image:  url("moz-icon://stock/gtk-preferences?size=menu") !important;
 }
@@ -689,9 +301,6 @@
 }
 #appMenu-library-bookmarks-button {
   list-style-image:  url("moz-icon://stock/user-bookmarks?size=menu") !important;
-}
-#appMenu-library-pocket-button {
-  fill: rgb(239, 64, 86) !important;
 }
 #appMenu-library-history-button {
   list-style-image:  url("moz-icon://stock/document-open-recent?size=menu") !important;
@@ -702,23 +311,32 @@
 #appMenu-library-remotetabs-button {
   list-style-image:  url("moz-icon://stock/emblem-shared?size=menu") !important;
 }
-#appMenu-library-screenshots > .toolbarbutton-icon {
-  list-style-image:  url("moz-icon://stock/monitor?size=menu") !important;
-}
 
+*/
 
-/* change icons of urlbar and searchbar */
+/* icons of urlbar and searchbar */
+
 .searchbar-search-icon {
-  list-style-image: url("moz-icon://stock/search?size=menu") !important;
-  width: 16px !important;
-  height: 16px !important;
+  list-style-image: url("moz-icon://stock/search?size=dialog") !important;
 }
-.search-go-button {
+.searchbar-search-icon-overlay {
+  .searchbar-search-button[addengines=true] > & {
+    list-style-image: url("moz-icon://stock/gtk-add?size=dialog") !important;
+  }
+  .searchbar-search-button:hover:not([addengines=true]) > & {
+    list-style-image: url("moz-icon://stock/go-jump?size=menu") !important;
+  }
+}
+.search-go-button.urlbar-icon {
   list-style-image:  url("moz-icon://stock/go-right?size=menu") !important;
 }
-.urlbar-go-button {
-  list-style-image:  url("moz-icon://stock/go-right?size=menu") !important;
+.search-panel-tree > .autocomplete-richlistitem[originaltype="fromhistory"] > .ac-type-icon {
+  list-style-image:  url("moz-icon://stock/document-open-recent?size=dialog") !important;
 }
+.search-setting-button > .button-box > .button-icon {
+  list-style-image:  url("moz-icon://stock/stock_properties?size=dialog") !important;
+}
+/*
 .urlbar-history-dropmarker {
   list-style-image:  url("moz-icon://stock/go-down?size=menu") !important;
 }
@@ -726,11 +344,15 @@
   width: 16px !important;
   height: 16px !important;
 }
-#identity-icon {
-  list-style-image: url("moz-icon://stock/info?size=menu") !important;
-}
 #urlbar[pageproxystate="invalid"] > #identity-box > #identity-icon {
   list-style-image: url("moz-icon://stock/search?size=menu") !important;
+}
+#pageActionButton {
+  list-style-image: url("moz-icon://stock/go-jump?size=menu") !important;
+}
+*/
+#identity-icon {
+  list-style-image: url("moz-icon://stock/info?size=menu") !important;
 }
 #star-button {
   list-style-image: url("moz-icon://stock/non-starred?size=menu") !important;
@@ -738,18 +360,12 @@
 #star-button[starred] {
   list-style-image: url("moz-icon://stock/starred?size=menu") !important;
 }
-#pageActionButton {
-  list-style-image: url("moz-icon://stock/go-jump?size=menu") !important;
-}
-#pocket-button {
-  fill: rgb(239, 64, 86) !important;
-}
-#reader-mode-button {
+#reader-mode-button-icon {
   list-style-image: url("moz-icon://stock/document?size=menu") !important;
 }
 
-
 /* change urlbar menu icons */
+/*
 #pageAction-panel-bookmark {
   list-style-image: url("moz-icon://stock/user-bookmarks?size=menu") !important;
 }
@@ -785,22 +401,49 @@
 .search-panel-tree > .autocomplete-treebody::-moz-tree-image(fromhistory) {
   list-style-image: url("moz-icon://stock/document-open-recent?size=menu") !important;
 }
+*/
 
+/* icons in sidebar switcher */
 
-/* change icons in sidebar switcher */
 #sidebar-switcher-bookmarks > .toolbarbutton-icon,
 #sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
   list-style-image: url("moz-icon://stock/starred?size=menu") !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 #sidebar-switcher-history > .toolbarbutton-icon,
 #sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
   list-style-image: url("moz-icon://stock/document-open-recent?size=menu") !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 #sidebar-switcher-tabs > .toolbarbutton-icon,
 #sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
   list-style-image: url("moz-icon://stock/emblem-shared?size=menu") !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
+#sidebar-close
+{
+  list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important;
+  width: 20px !important;
+  height: 20px !important;
+  -moz-appearance: none !important;
+}
 
+#sidebar-switcher-arrow
+{
+  list-style-image: url("moz-icon://stock/go-jump?size=dialog") !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.textbox-search-sign
+{
+  list-style-image: url("moz-icon://stock/search?size=dialog") !important;
+  width: 16px !important;
+  height: 16px !important;
+}
