@@ -47,11 +47,11 @@
 {
   padding: 3px !important;
 }
-#PanelUI-menu-button > .toolbarbutton-badge-stack
+.toolbarbutton-badge-stack
 {
   padding: 4px !important;
 }
-#PanelUI-menu-button > .toolbarbutton-badge-stack > .toolbarbutton-icon
+.toolbarbutton-badge-stack > .toolbarbutton-icon
 {
   padding: 0px !important;
   width: 20px !important;
