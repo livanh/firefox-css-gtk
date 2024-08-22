@@ -1,6 +1,6 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-/* change background of navbar */
+/* remove background of navbar */
 #nav-bar
 {
   padding: 0 !important;
@@ -19,21 +19,16 @@
 
 #nav-bar .toolbarbutton-1:not([lwtheme])
 {
-  -moz-appearance: toolbarbutton !important;
+  appearance: toolbarbutton !important;
 }
-:root {
-  --arrowpanel-header-info-icon-padding: 0px;
+/*
+*|*:root {
+  --arrowpanel-header-info-icon-padding: 0px !important;
 }
-
+*/
 #nav-bar .toolbarbutton-1:-moz-lwtheme:hover
 {
   background: hsla(0,0%,100%,0.30);
-}
-
-#nav-bar
-{
-  padding: 0 !important;
-  margin-top: 0px !important;
 }
 
 #nav-bar .toolbarbutton-icon:hover,
@@ -49,29 +44,47 @@
 }
 .toolbarbutton-badge-stack
 {
-  padding: 4px !important;
+  padding: 3px !important;
 }
-.toolbarbutton-badge-stack > .toolbarbutton-icon
+#PanelUI-button .toolbarbutton-badge-stack > .toolbarbutton-icon,
+.unified-extensions-item-action-button > .toolbarbutton-badge-stack > .toolbarbutton-icon
 {
   padding: 0px !important;
-  width: 20px !important;
-  height: 20px !important;
+  width: 26px !important;
+  height: 26px !important;
 }
-*|*:root {
-  --button-hover-bgcolor: none !important;
-  --button-active-bgcolor: none !important;
+*|*:root[uidensity=compact] #PanelUI-button .toolbarbutton-badge-stack > .toolbarbutton-icon,
+*|*:root[uidensity=compact] .unified-extensions-item-action-button > .toolbarbutton-badge-stack > .toolbarbutton-icon
+{
+  width: 22px !important;
+  height: 22px !important;
+}
+*|*:root[uidensity=touch] #PanelUI-button  .toolbarbutton-badge-stack > .toolbarbutton-icon,
+*|*:root[uidensity=touch] .unified-extensions-item-action-button > .toolbarbutton-badge-stack > .toolbarbutton-icon
+{
+  width: 28px !important;
+  height: 28px !important;
 }
 
+/* remove additional border on hover/click on some buttons (e.g. PanelUI) */
+.toolbarbutton-badge-stack,
+.toolbarbutton-icon
+{
+  background: none !important;
+}
 
-/* change text boxes to native style*/
+/* change text boxes to native style */
+*|*:root
+{
+  --toolbar-field-background-color: Field !important;
+}
 #urlbar, .searchbar-textbox
 {
-  color: -moz-fieldtext !important;
-  -moz-appearance: textfield !important;
+  appearance: textfield !important;
 }
 
-:root {
-  --toolbarbutton-inner-padding: 0 !important;
+
+*|*:root {
   --arrowpanel-dimmed: Highlight !important;
   --arrowpanel-dimmed-further: Highlight !important;
   --arrowpanel-dimmed-even-further: Highlight !important;
@@ -87,28 +100,27 @@
 
 #PersonalToolbar .bookmark-item
 {
-  -moz-appearance: toolbarbutton !important;
+  appearance: toolbarbutton !important;
 }
 
-#PersonalToolbar .menuitem-iconic
-{
-  -moz-appearance: menuitem !important;
-}
-
+#PersonalToolbar .menuitem-iconic,
 #PersonalToolbar .menu-iconic
 {
-  -moz-appearance: menuitem !important;
+  appearance: menulist !important;
 }
 
 #PersonalToolbar .bookmark-item:-moz-lwtheme
 {
-  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
 #PersonalToolbar .bookmark-item:-moz-lwtheme:hover
 {
   background: hsla(0,0%,100%,0.30) !important;
 }
+
+
+/* TODO */
 .urlbar-icon:hover, .urlbar-icon-wrapper:hover {
   background-color: Highlight !important;
 }
@@ -124,39 +136,10 @@
 }
 
 
-
-/* change colors of PanelUI menu */
-:root {
-  --arrowpanel-background: -moz-dialog !important;
-  --arrowpanel-color: -moz-dialogText !important;
-}
-panelview .toolbarbutton-1:-moz-any(:hover, :focus):not(:-moz-any([disabled])),
-toolbarbutton.subviewbutton:-moz-any(:hover, :focus):not(:-moz-any([disabled] )),
-menu.subviewbutton[_moz-menuactive]:not(:-moz-any([disabled])),
-menuitem.subviewbutton[_moz-menuactive]:not(:-moz-any([disabled])),
-.widget-overflow-list .toolbarbutton-1:-moz-any(:hover, :focus):not(:-moz-any([disabled])),
-.toolbaritem-combined-buttons:-moz-any(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton:-moz-any(:hover, :focus):not(:-moz-any([disabled])) {
-  color: HighlightText !important;
-  background-color: Highlight !important;
-}
-photonpanelmultiview .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic) {
-  background-color:  -moz-dialog !important;
-  border: 1px solid ThreeDShadow !important;
-}
-photonpanelmultiview .PanelUI-subView .toolbaritem-combined-buttons > .subviewbutton:not(.subviewbutton-iconic):hover {
-  background-color: Highlight !important;
-  border: 1px solid HighlightText !important;
-}
-.subviewbutton:hover::after {
-  background-color: Highlight !important;
-  color: HighlightText !important;
-}
-
-
 /* change colors of empty page (e.g. while loading) */
 .tabbrowser-tabbox {
-  background: -moz-Field !important;
-  color: -moz-FieldText !important;
+  background: Field !important;
+  color: FieldText !important;
 }
 
 
@@ -166,34 +149,45 @@ photonpanelmultiview .PanelUI-subView .toolbaritem-combined-buttons > .subviewbu
   padding: 0px !important;
 }
 #sidebar-switcher-target {
-  -moz-appearance: button !important;
+  appearance: button !important;
 }
 .sidebar-header, #sidebar-header {
   font-size: 1em !important;
 }
 
+/* change style of urlbar popup menu */
+.urlbarView {
+  background-color: -moz-Dialog !important;
+  width: 100% !important;
+  margin: 0px !important;
+  border-color: ThreeDShadow !important;
+}
 
-/* change style of autocomplete popup */
+/* change style of autocomplete popup TODO */
+#PopupSearchAutoComplete {
+  --panel-background: -moz-Dialog  !important;
+}
 .search-panel-current-engine {
   color: ButtonText !important;
-  -moz-appearance: button !important;
+  appearance: button !important;
 }
-.search-panel-header {
+.search-panel-header
+{
   background-color: -moz-Dialog !important;
 }
 .search-panel-one-offs {
   background-color: -moz-Dialog !important;
 }
 .searchbar-engine-one-off-item:not(.dummy)  {
-  -moz-appearance: dualbutton !important;
+  appearance: dualbutton !important;
 }
 .addengine-item {
   color: ButtonText !important;
-  -moz-appearance: button !important;
+  appearance: button !important;
 }
 .search-setting-button {
   color: ButtonText !important;
-  -moz-appearance: button !important;
+  appearance: button !important;
 }
 .autocomplete-richlistitem:hover,
 treechildren.searchbar-treebody::-moz-tree-row(hover) {
@@ -203,7 +197,7 @@ treechildren.searchbar-treebody::-moz-tree-row(hover) {
 
 
 
-/* change style of download popup menu */
+/* change style of download popup menu TODO */
 .downloadsPanelFooter {
   background-color: var(--arrowpanel) !important;
 }
@@ -213,7 +207,39 @@ treechildren.searchbar-treebody::-moz-tree-row(hover) {
 }
 
 
-.popup-notification-button, .panel-subview-footer, .downloadsPanelFooterButton{
-  -moz-appearance: button !important;
+.popup-notification-button,
+.panel-subview-footer,
+.downloadsPanelFooterButton
+{
+  appearance: button !important;
+}
 
+/* change style of popup menus */
+toolbarbutton.subviewbutton:-moz-any(:hover, :focus):not(:-moz-any([disabled] )),
+toolbarbutton.bookmark-item[open="true"],
+menuitem:-moz-any(:hover, :focus):not(:-moz-any([disabled] )),
+menu.menu-iconic:-moz-any(:hover, :focus, [open="true"]):not(:-moz-any([disabled] ))
+{
+  color: HighlightText !important;
+}
+*|*:root {
+  --arrowpanel-background: -moz-dialog !important;
+  --arrowpanel-color: -moz-dialogText !important;
+  --button-hover-bgcolor: Highlight !important;
+  --button-active-bgcolor: Highlight !important;
+  --urlbarView-item-block-padding: 2px !important;
+}
+.toolbar-menupopup
+{
+  --panel-background: menu !important;
+}
+.unified-extensions-item-menu-button:hover,
+#appMenu-zoom-controls > .subviewbutton:not([disabled]):is(:hover, :hover:active)
+{
+  background-color: Highlight !important;
+  border-radius: 3px !important;
+}
+/* not working? */
+.urlbarView-row:hover {
+  color: var(--urlbarView-highlight-color) !important;
 }
