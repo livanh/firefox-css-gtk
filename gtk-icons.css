@@ -40,6 +40,9 @@
 #PanelUI-menu-button .toolbarbutton-icon
                            { list-style-image: url("moz-icon://stock/open-menu?size=dialog") !important }
 
+/* disable animation of stop/reload button */
+#stop-reload-button .toolbarbutton-animatable-image{ animation-duration: 0s !important; }
+
 /* change icons in history/bookmarks editor */
 
 #placesToolbar > toolbarbutton > .toolbarbutton-icon
