@@ -150,6 +150,16 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
   left: calc(50% - 14px) !important;
 }
 
+.downloadIconCancel > .button-box > .button-icon
+  { list-style-image: url("moz-icon://stock/gtk-stop?size=dialog") !important; }
+.downloadIconShow > .button-box > .button-icon
+  { list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar") !important; }
+.downloadIconRetry > .button-box > .button-icon
+  { list-style-image: url("moz-icon://stock/gtk-refresh?size=dialog") !important; }
+.downloadIconSubviewArrow > .button-box > .button-icon
+  { list-style-image: url("moz-icon://stock/previous?size=dialog") !important; }
+.downloadIconSubviewArrow > .button-box > .button-icon:-moz-locale-dir(ltr)
+  { list-style-image: url("moz-icon://stock/next?size=dialog") !important; }
 
 
 /* change icons of hamburger menu */

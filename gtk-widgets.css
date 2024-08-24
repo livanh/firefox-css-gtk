@@ -171,6 +171,7 @@
   border-color: ThreeDShadow !important;
 }
 
+
 /* change style of autocomplete popup TODO */
 #PopupSearchAutoComplete {
   --panel-background: -moz-Dialog  !important;
