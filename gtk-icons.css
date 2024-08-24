@@ -65,7 +65,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 #context-reload                     { list-style-image: url("moz-icon://stock/gtk-refresh?size=dialog") !important }
 #context-stop                       { list-style-image: url("moz-icon://stock/gtk-stop?size=dialog") !important }
 #context-bookmarkpage               { list-style-image: url("moz-icon://stock/bookmark-missing?size=dialog") !important}
-#context-bookmarkpage[starred=true] { list-style-image: url("moz-icon://stock/bookmark?size=dialog") !important }
+#context-bookmarkpage[starred=true] { list-style-image: url("moz-icon://stock/user-bookmarks?size=dialog") !important }
 /*#context-savepage                 { list-style-image: url("moz-icon://stock/starred?size=dialog") !important } */
 #context-navigation > .menuitem-iconic > hbox > .menu-iconic-icon {
   width: 40px !important;
@@ -200,10 +200,8 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 #panelMenuBookmarkThisPage                 { list-style-image: url("moz-icon://stock/bookmark_add?size=dialog") }
 #panelMenuBookmarkThisPage[starred="true"] { list-style-image: url("moz-icon://stock/stock_edit?size=dialog") }
 #panelMenu_searchBookmarks                 { list-style-image: url("moz-icon://stock/search?size=dialog") }
-/*#panelMenu_viewBookmarksToolbar            { list-style-image: url("moz-icon://stock/stock_not?size=dialog") }
-*|*:root[BookmarksToolbarOverlapsBrowser] #panelMenu_viewBookmarksToolbar   { list-style-image: url("moz-icon://stock/stock_mark?size=dialog") }
-*/
-#panelMenu_showAllBookmarks                { list-style-image: url("moz-icon://stock/applications-libraries?size=dialog") }
+#panelMenu_viewBookmarksToolbar            { list-style-image: url("moz-icon://stock/user-bookmarks?size=dialog") }
+#panelMenu_showAllBookmarks                { list-style-image: url("moz-icon://stock/gtk-edit?size=dialog") }
 
 /* change icons of history submenu */
 #appMenuRecentlyClosedTabs             { list-style-image: url("moz-icon://stock/tab_new?size=dialog") }
@@ -396,4 +394,30 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 }
 
 /* extensions menu settings button */
-.unified-extensions-item-menu-button { list-style-image: url("moz-icon://stock/stock_properties?size=dialog") !important; }
+.unified-extensions-item-menu-button
+{
+  list-style-image: url("moz-icon://stock/stock_properties?size=dialog") !important;
+}
+
+/* translation settigs button icon */
+#translations-panel-settings .toolbarbutton-icon
+{
+  list-style-image: url("moz-icon://stock/stock_properties?size=dialog") !important;
+  width: 24px !important;
+  padding: 3px !important;
+}
+
+/* icons in "edit bookmarks" panel */
+.folder-icon {
+  list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar") !important;
+}
+
+#editBMPanel_folderMenuList[selectedGuid="toolbar_____"],
+#editBMPanel_toolbarFolderItem {
+  list-style-image: url("moz-icon://stock/user-bookmarks?size=toolbar") !important;
+}
+
+#editBMPanel_folderMenuList[selectedGuid="menu________"],
+#editBMPanel_bmRootItem {
+  list-style-image: url("moz-icon://stock/gtk-index?size=toolbar") !important;
+}

@@ -206,7 +206,7 @@ treechildren.searchbar-treebody::-moz-tree-row(hover) {
 
 
 
-/* change style of download popup menu TODO */
+/* change style of download popup menu */
 .downloadsPanelFooter {
   background-color: var(--arrowpanel) !important;
 }
@@ -256,4 +256,27 @@ menu.menu-iconic:-moz-any(:hover, :focus, [open="true"]):not(:-moz-any([disabled
 /* not working? */
 .urlbarView-row:hover {
   color: var(--urlbarView-highlight-color) !important;
+}
+
+/* change "edit bookmark" and translation popups */
+.footer-button
+{
+  appearance: button !important;
+  padding: 4px !important;
+}
+menulist
+{  appearance: auto !important;
+  -moz-default-appearance: button !important;
+  padding: 4px !important;
+}
+.panel-info-button
+{
+  appearance: toolbarbutton !important;
+}
+.expander-down,
+.expander-up,
+#editBMPanel_newFolderButton
+{
+  appearance: button !important;
+  padding: 4px !important;
 }
