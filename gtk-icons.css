@@ -379,7 +379,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
   list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important;
   width: 20px !important;
   height: 20px !important;
-  appearance: none !important;
+  appearance: toolbarbutton !important;
 }
 
 #sidebar-switcher-arrow
@@ -424,3 +424,9 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 #editBMPanel_bmRootItem {
   list-style-image: url("moz-icon://stock/gtk-index?size=toolbar") !important;
 }
+
+/* buttons in find bar */
+.findbar-find-previous {list-style-image: url("moz-icon://stock/go-up?size=menu") !important}
+.findbar-find-next     {list-style-image: url("moz-icon://stock/go-down?size=menu") !important}
+.findbar-closebutton   {list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important}
+
