@@ -68,6 +68,14 @@ menupopup, panel {
   --urlbar-box-hover-bgcolor: Highlight !important;
   --toolbar-field-focus-border-color: color-mix(in srgb, var(--focus-outline-color) 50%, Field) !important;
 }
+#urlbar-zoom-button
+{
+  background-color: var(--toolbar-bgcolor) !important;
+  &:hover {
+    color: HighlightText !important;
+    background-color: Highlight !important;  
+  }
+}
 /* do not change urlbar size on select */
 #urlbar[breakout][breakout-extend] {
   top: 4px !important;
@@ -282,4 +290,12 @@ menulist
 .findbar-closebutton
 {
   appearance: toolbarbutton !important;
+}
+
+/* customization screen background color */
+#customization-container {
+  background-color: Field !important;
+}
+#customization-footer {
+  background-color: var(--toolbar-bgcolor) !important;  
 }
