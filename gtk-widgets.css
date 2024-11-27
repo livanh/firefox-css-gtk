@@ -216,12 +216,15 @@ treechildren.searchbar-treebody::-moz-tree-row(hover) {
     list-style-image: url("moz-icon://stock/gtk-directory?size=toolbar") !important;
 }
 
-
 .popup-notification-button,
 .panel-subview-footer,
 .downloadsPanelFooterButton
 {
   appearance: button !important;
+}
+
+#downloadsFooterButtons > toolbarseparator {
+  border-top: none !important;
 }
 
 /* change style of popup menus */
