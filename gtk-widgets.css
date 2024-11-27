@@ -6,6 +6,16 @@
   --toolbar-bgcolor: -moz-dialog !important;
 }
 
+/* square corners for menus */
+*|*:root
+{
+  --arrowpanel-border-radius: 0px !important;
+  --arrowpanel-menuitem-border-radius: 0px !important;
+}
+menupopup, panel {
+  --panel-border-radius: 0px !important;
+}
+
 /* remove nav bar top border */
 #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar)
 {
