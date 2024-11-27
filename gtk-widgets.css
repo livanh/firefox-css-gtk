@@ -120,6 +120,7 @@ menupopup, panel {
   --arrowpanel-dimmed: Highlight !important;
   --arrowpanel-dimmed-further: Highlight !important;
   --arrowpanel-dimmed-even-further: Highlight !important;
+  --panel-item-hover-bgcolor: Highlight !important;
 }
 
 #PersonalToolbar .bookmark-item
