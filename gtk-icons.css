@@ -326,6 +326,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 #webrtc-sharing-icon[sharing="microphone"] { list-style-image: url("moz-icon://stock/microphone?size=toolbar") !important; }
 #webrtc-sharing-icon[sharing="screen"]     { list-style-image: url("moz-icon://stock/display?size=toolbar") !important; }
 #geo-sharing-icon[sharing]                 { list-style-image: url("moz-icon://stock/mark-location?size=toolbar") !important; }
+#password-notification-icon                { list-style-image: url("moz-icon://stock/dialog-password?size=menu") !important; }
 
 /* urlbar tracking protection icon */
 
@@ -430,3 +431,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 .findbar-find-next     {list-style-image: url("moz-icon://stock/go-down?size=menu") !important}
 .findbar-closebutton   {list-style-image: url("moz-icon://stock/gtk-close?size=menu") !important}
 
+/* bookmarks bar placeholder in customization screen */
+#bookmarks-toolbar-placeholder > image {
+  list-style-image: url("moz-icon://stock/starred?size=menu") !important
+}
