@@ -25,20 +25,20 @@
 #preferences-button        { list-style-image: url("moz-icon://stock/gtk-preferences?size=dialog") !important }
 #characterencoding-button  { list-style-image: url("moz-icon://stock/font?size=dialog") !important }
 #sidebar-button            { list-style-image: url("moz-icon://stock/go-last?size=dialog") !important }
-#find-button               { list-style-image: url("moz-icon://stock/find?size=dialog") !important }
+#find-button               { list-style-image: url("moz-icon://stock/gtk-find?size=dialog") !important }
 #open-file-button          { list-style-image: url("moz-icon://stock/gtk-open?size=dialog") !important }
 #save-page-button          { list-style-image: url("moz-icon://stock/gtk-save?size=dialog") !important }
 #privatebrowsing-button    { list-style-image: url("moz-icon://stock/avatar-default?size=dialog") !important }
 #sync-button               { list-style-image: url("moz-icon://stock/emblem-shared?size=dialog") !important }
 #logins-button             { list-style-image: url("moz-icon://stock/dialog-password?size=dialog") !important }
-#screenshot-button         { list-style-image: url("moz-icon://stock/camera?size=dialog") !important }
+#screenshot-button         { list-style-image: url("moz-icon://stock/camera-photo?size=dialog") !important }
 #save-to-pocket-button     { list-style-image: url("moz-icon://stock/stock_todo?size=dialog") !important }
 #import-button             { list-style-image: url("moz-icon://stock/bookmarks_list_add?size=dialog") !important }
 #history-panelmenu         { list-style-image: url("moz-icon://stock/document-open-recent?size=dialog") !important }
 #unified-extensions-button { list-style-image: url("moz-icon://stock/extension?size=dialog") !important }
 #nav-bar-overflow-button   { list-style-image: url("moz-icon://stock/go-jump?size=dialog") !important }
 #PanelUI-menu-button .toolbarbutton-icon
-                           { list-style-image: url("moz-icon://stock/open-menu?size=dialog") !important }
+                           { list-style-image: url("moz-icon://stock/stock_properties?size=dialog") !important; }
 
 /* disable animation of stop/reload button */
 #stop-reload-button .toolbarbutton-animatable-image{ animation-duration: 0s !important; }
@@ -185,7 +185,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 #appMenu-extensions-themes-button   { list-style-image: url("moz-icon://stock/extension?size=dialog") }
 #appMenu-print-button2              { list-style-image: url("moz-icon://stock/document-print?size=dialog") }
 #appMenu-save-file-button2          { list-style-image: url("moz-icon://stock/gtk-save?size=dialog") }
-#appMenu-find-button2               { list-style-image: url("moz-icon://stock/search?size=dialog") }
+#appMenu-find-button2               { list-style-image: url("moz-icon://stock/gtk-find?size=dialog") }
 #appMenu-translate-button           { list-style-image: url("moz-icon://stock/gnome-translate?size=dialog") }
 #appMenu-settings-button            { list-style-image: url("moz-icon://stock/gtk-preferences?size=dialog") }
 #appMenu-more-button2               { list-style-image: url("moz-icon://stock/preferences-other?size=dialog") }
@@ -202,7 +202,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 
 #panelMenuBookmarkThisPage                 { list-style-image: url("moz-icon://stock/bookmark_add?size=dialog") }
 #panelMenuBookmarkThisPage[starred="true"] { list-style-image: url("moz-icon://stock/stock_edit?size=dialog") }
-#panelMenu_searchBookmarks                 { list-style-image: url("moz-icon://stock/search?size=dialog") }
+#panelMenu_searchBookmarks                 { list-style-image: url("moz-icon://stock/gtk-find?size=dialog") }
 #panelMenu_viewBookmarksToolbar            { list-style-image: url("moz-icon://stock/user-bookmarks?size=dialog") }
 #panelMenu_showAllBookmarks                { list-style-image: url("moz-icon://stock/gtk-edit?size=dialog") }
 
@@ -211,33 +211,33 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 #appMenu-library-recentlyClosedTabs    { list-style-image: url("moz-icon://stock/tab_new?size=dialog") }
 #appMenuRecentlyClosedWindows          { list-style-image: url("moz-icon://stock/stock_new-window?size=dialog") }
 #appMenu-library-recentlyClosedWindows { list-style-image: url("moz-icon://stock/stock_new-window?size=dialog") }
-#appMenuSearchHistory                  { list-style-image: url("moz-icon://stock/search?size=dialog") }
+#appMenuSearchHistory                  { list-style-image: url("moz-icon://stock/gtk-find?size=dialog") }
 #appMenuClearRecentHistory             { list-style-image: url("moz-icon://stock/stock_not?size=dialog") }
 #PanelUI-historyMore                   { list-style-image: url("moz-icon://stock/document-open-recent?size=dialog") }
 
 /* change icons of "other tools" submenu */
-#appmenu-moreTools-button                 { list-style-image: url("moz-icon://stock/gtk-preferences?size=dialog") }
-#appmenu-developer-tools-view  > toolbarbutton[key="key_toggleToolbox"] { list-style-image: url("moz-icon://stock/applications-debugging?size=dialog") }
-#appmenu-developer-tools-view  > toolbarbutton[key="key_aboutProcesses"] { list-style-image: url("moz-icon://stock/gnome-monitor?size=dialog") }
-#appmenu-developer-tools-view  > toolbarbutton[key="key_browserToolbox"] { list-style-image: url("moz-icon://stock/preferences-other?size=dialog") }
-#appmenu-developer-tools-view  > toolbarbutton[key="key_browserConsole"] { list-style-image: url("moz-icon://stock/terminal?size=dialog") }
+#appmenu-moreTools-button                                                      { list-style-image: url("moz-icon://stock/gtk-preferences?size=dialog") }
+#appmenu-developer-tools-view  > toolbarbutton[key="key_toggleToolbox"]        { list-style-image: url("moz-icon://stock/applications-debugging?size=dialog") }
+#appmenu-developer-tools-view  > toolbarbutton[key="key_aboutProcesses"]       { list-style-image: url("moz-icon://stock/gnome-monitor?size=dialog") }
+#appmenu-developer-tools-view  > toolbarbutton[key="key_browserToolbox"]       { list-style-image: url("moz-icon://stock/preferences-other?size=dialog") }
+#appmenu-developer-tools-view  > toolbarbutton[key="key_browserConsole"]       { list-style-image: url("moz-icon://stock/terminal?size=dialog") }
 #appmenu-developer-tools-view  > toolbarbutton[key="key_responsiveDesignMode"] { list-style-image: url("moz-icon://stock/phone?size=dialog") }
-#appmenu-developer-tools-view  > toolbarbutton[key="key_viewSource"] { list-style-image: url("moz-icon://stock/text-xml?size=dialog") }
+#appmenu-developer-tools-view  > toolbarbutton[key="key_viewSource"]           { list-style-image: url("moz-icon://stock/text-xml?size=dialog") }
 
 /* change icons of help submenu */
-#appMenu_menu_openHelp                 { list-style-image: url("moz-icon://stock/help?size=dialog") }
-#appMenu_feedbackPage { list-style-image: url("moz-icon://stock/dialog-ok?size=dialog") }
-#appMenu_helpSafeMode { list-style-image: url("moz-icon://stock/applications-debugging?size=dialog") }
-#appMenu_troubleShooting { list-style-image: url("moz-icon://stock/info?size=dialog") }
+#appMenu_menu_openHelp                         { list-style-image: url("moz-icon://stock/help?size=dialog") }
+#appMenu_feedbackPage                          { list-style-image: url("moz-icon://stock/dialog-ok?size=dialog") }
+#appMenu_helpSafeMode                          { list-style-image: url("moz-icon://stock/applications-debugging?size=dialog") }
+#appMenu_troubleShooting                       { list-style-image: url("moz-icon://stock/info?size=dialog") }
 #appMenu_menu_HelpPopup_reportPhishingtoolmenu { list-style-image: url("moz-icon://stock/dialog-warning?size=dialog") }
-#appMenu_helpSwitchDevice { list-style-image: url("moz-icon://stock/computer?size=dialog") }
-#appMenu_aboutName { list-style-image: url("moz-icon://stock/firefox?size=dialog") }
+#appMenu_helpSwitchDevice                      { list-style-image: url("moz-icon://stock/computer?size=dialog") }
+#appMenu_aboutName                             { list-style-image: url("moz-icon://stock/firefox?size=dialog") }
 
 
 /* change icons of urlbar and searchbar */
 
 .searchbar-search-icon {
-  list-style-image: url("moz-icon://stock/search?size=dialog") !important;
+  list-style-image: url("moz-icon://stock/gtk-find?size=dialog") !important;
 }
 .searchbar-search-icon-overlay {
   .searchbar-search-button[addengines=true] > & {
@@ -265,7 +265,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
   height: 16px !important;
 }
 #urlbar[pageproxystate="invalid"] > #identity-box > #identity-icon {
-  list-style-image: url("moz-icon://stock/search?size=menu") !important;
+  list-style-image: url("moz-icon://stock/gtk-find?size=menu") !important;
 }
 #pageActionButton {
   list-style-image: url("moz-icon://stock/go-jump?size=menu") !important;
@@ -276,10 +276,10 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
   list-style-image: url("moz-icon://stock/info?size=menu") !important;
 }*/
 #star-button {
-  list-style-image: url("moz-icon://stock/non-starred?size=dialog") !important;
+  list-style-image: url("moz-icon://stock/bookmark-missing?size=dialog") !important;
 }
 #star-button[starred] {
-  list-style-image: url("moz-icon://stock/starred?size=dialog") !important;
+  list-style-image: url("moz-icon://stock/user-bookmarks?size=dialog") !important;
 }
 #reader-mode-button-icon {
   list-style-image: url("moz-icon://stock/document?size=menu") !important;
@@ -298,7 +298,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 #identity-box[pageproxystate="valid"].localResource #identity-icon
   { list-style-image: url("moz-icon://stock/document?size=toolbar") !important; }
 #identity-box[pageproxystate="invalid"] #identity-icon
-  { list-style-image: url("moz-icon://stock/search?size=toolbar") !important; }
+  { list-style-image: url("moz-icon://stock/gtk-find?size=toolbar") !important; }
 #urlbar[actiontype="extension"] > .urlbar-input-container > #identity-box #identity-icon
   { list-style-image: url("moz-icon://stock/extension?size=toolbar") !important; }
 #identity-box[pageproxystate="valid"].extensionPage #identity-icon
@@ -352,11 +352,11 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 #urlbar-engine-one-off-item-history{
   list-style-image: url("moz-icon://stock/document-open-recent?size=toolbar") !important;
   }
-/* icons in sidebar switcher */
 
+/* icons in sidebar switcher */
 #sidebar-switcher-bookmarks > .toolbarbutton-icon,
 #sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
-  list-style-image: url("moz-icon://stock/starred?size=menu") !important;
+  list-style-image: url("moz-icon://stock/user-bookmarks?size=menu") !important;
   width: 16px !important;
   height: 16px !important;
 }
@@ -392,7 +392,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 
 .textbox-search-sign
 {
-  list-style-image: url("moz-icon://stock/search?size=dialog") !important;
+  list-style-image: url("moz-icon://stock/gtk-find?size=dialog") !important;
   width: 16px !important;
   height: 16px !important;
 }
@@ -433,5 +433,5 @@ treechildren::-moz-tree-image(query, OrganizerQuery_tags_______v) {
 
 /* bookmarks bar placeholder in customization screen */
 #bookmarks-toolbar-placeholder > image {
-  list-style-image: url("moz-icon://stock/starred?size=menu") !important
+  list-style-image: url("moz-icon://stock/user-bookmarks?size=menu") !important
 }
